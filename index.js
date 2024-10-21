@@ -1,7 +1,7 @@
 const express = require('express');
 // express app
 const app = express();
-console.log('md')
+console.log('tester')
 // listen for requests
 app.listen(80);
 
@@ -17,4 +17,4 @@ app.get('/about', (req, res) => {
 
 app.use((req,res) => {
     res.sendFile('./views/404.html',  { root: __dirname });
-})
+});
